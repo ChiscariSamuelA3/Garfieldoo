@@ -1,0 +1,19 @@
+ase, ISpritePhysicsOutlineDataProvider
+    {
+        public SpritePhysicsOutlineDataTransfer(TextureImporterDataProvider dp) : base(dp)
+        {}
+
+        public List<Vector2[]> GetOutlines(GUID guid)
+        {
+            var index = dataProvider.GetSpriteDataIndex(guid);
+            return Load(dataProvider.GetSerializedObject(), dataProvider.spriteImportMode, index);
+        }
+
+        public void SetOutlines(GUID guid, List<Vector2[]> data)
+        {
+            ((SpriteDataExt)dataProvider.GetSpriteData(guid)).spritePhysicsOutline = data;
+        }
+
+        public float GetTessellationDetail(GUID guid)
+        {
+          

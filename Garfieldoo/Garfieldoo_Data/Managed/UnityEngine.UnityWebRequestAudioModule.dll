@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v3" manifestVersion="1.0" copyright="Copyright (c) Microsoft Corporation. All Rights Reserved.">
+  <assemblyIdentity name="Microsoft-Windows-ShellCommonCommonProxyStub" version="10.0.19041.546" processorArchitecture="wow64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+  <file name="ShellCommonCommonProxyStub.dll" destinationPath="$(runtime.system32)\" sourceName="ShellCommonCommonProxyStub.dll" importPath="$(build.nttree)\" sourcePath=".\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>EGRGteKUEK1EuYRTU9NB9ooeA45BsyErwtakiB58ZJs=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <asm:registryKeys xmlns:asm="urn:schemas-microsoft-com:asm.v3">
+    <asm:registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{3FBF60BD-90B2-2C2F-7286-128BBCF72015}">
+      <asm:registryValue name="" valueType="REG_SZ" value="PSFactoryBuffer" />
+      <asm:securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+    </asm:registryKey>
+    <asm:registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{3FBF60BD-90B2-2C2F-7286-128BBCF72015}\InProcServer32">
+      <asm:registryValue name="ThreadingModel" valueType="REG_SZ" value="Both" />
+      <asm:registryValue name="" valueType="REG_SZ" value="$(runtime.system32)\ShellCommonCommonProxyStub.dll" />
+      <asm:securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+    </asm:registryKey>
+    <asm:registryKey keyName="HKEY_CLASSES_ROOT\Interface\{000B144C-DE5B-45C6-8404-B4D06E056130}">
+      <asm:securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+      <asm:registryValue name="" valueType="REG_SZ" value="__x_Windows_CInternal_CComposableShell_CTabs_CIViewTabEventArgs" />
+    </asm:registryKey>
+    <asm:registryKey keyName="HKEY_CLASSES_ROOT\Interface\{000B144C-DE5B-45C6-8404-B4D06E056130}\ProxyStubClsid32">
+      <asm:registryValue name="" valueType="REG_SZ" value="{3FBF60BD-90B2-2C2F-7286-128BBCF72015}" />
+      <asm:securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+    </asm:registryKey>
+    <asm:registryKey keyName="HKEY_CLASSES_ROOT\Interface\{00119F69-02D1-4DB2-A10B-559FC761C4A5}">
+      <asm:securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+      <asm:registryValue name="" valueType="REG_SZ" value="__x_Windows_CInternal_CApplicationModel_CCompanionSets_CICompanionSet" />
+    </asm:registryKey>
+    <asm:registryKey keyName="HKEY_CLASSES_ROOT\Interface\{00119F69-02D1-4DB2-A10B-559FC761C4A5}\ProxyStubClsid32">
+      <asm:registryValue name="" valueType="REG_SZ" value="{3FBF60BD-90B2-2C2F-7286-128BBCF72015}" />
+      <asm:securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+    </asm:registryKey>
+    <asm:registryKey keyName="HKEY_CLASSES_ROOT\Interface\{0083831C-82D6-4E8F-BCC2-A8AC2691BE49}">
+      <asm:securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+      <asm:registryValue name="" valueType="REG_SZ" value="__x_WindowsInternal_CShell_CUnifiedTile_CPrivate_CIUnifiedTileUserPinHelperStatics" />
+    </asm:registryKey>
+    <asm:registryKey keyName="HKEY_CLASSES_ROOT\Interface\{0083831C-82D6-4E8F-BCC2-A8AC2691BE49}\ProxyStubClsid32">
+      <asm:registryValue name="" valueType="REG_SZ" value="{3FBF60BD-90B2-2C2F-7286-128BBCF72015}" />
+      <asm:securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+    </asm:registryKey>
+    <asm:registryKey keyName="HKEY_CLASSES_ROOT\Interface\{00A38E35-5DF3-434F-9168-C0C532EF9798}">
+      <asm:securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+      <asm:registryValue name="" valueType="REG_SZ" value="__x_Windows_CInternal_CUI_CAuth_CEnrollment_CICredentialEnrollmentManagerStatics" />
+    </asm:registryKey>
+    <asm:registryKey keyName="HKEY_CLASSES_ROOT\Interface\{00A38E35-5DF3-434F-9168-C0C532EF9798}\ProxyStubClsid32">
+      <asm:registryValue name="" valueType="REG_SZ" value="{3FBF60BD-90B2-2C2F-7286-128BBCF72015}" />
+      <asm:securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+    </asm:registryKey>
+    <asm:registryKey keyName="HKEY_CLASSES_ROOT\Interface\{01B8CD94-E0FE-5ED9-B72A-61DA1E2D5F6F}">
+      <asm:securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+      <asm:registryValue name="" valueType="REG_SZ" value="__FIIterator_1___FIKeyValuePair_2_HSTRING___FIVectorView_1_Windows__CInternal__CShell__CJumpView__CJumpViewCategoryInfo" />
+    </asm:registryKey>
+    <asm:registryKey keyName="HKEY_CLASSES_ROOT\Interface\{01B8CD94-E0FE-5ED9-B72A-61DA1E2D5F6F}\ProxyStubClsid32">
+      <asm:registryValue name="" valueType="REG_SZ" value="{3FBF60BD-90B2-2C2F-7286-128BBCF72015}" />
+      <asm:securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+    </asm:registryKey>
+    <asm:registryKey keyName="HKEY_CLASSES_ROOT\Interface\{0249C870-F630-4A75-8D01-B316C814157A}">
+      <asm:securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+      <asm:registryValue name="" valueType="REG_SZ" value="__x_Windows_CInternal_CShell_CHolographic_CIHolographicForegroundAssistant" />
+    </asm:registryKey>
+    <asm:registryKey keyName="HKEY_CLASSES_ROOT\Interface\{0249C870-F630-4A75-8D01-B316C814157A}\ProxyStubClsid32">
+      <asm:registryValue name="" valueType="REG_SZ" value="{3FBF60BD-90B2-2C2F-7286-128BBCF72015}" />
+      <asm:securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+    </asm:registryKey>
+    <asm:registryKey keyName="HKEY_CLASSES_ROOT\Interface\{035A011C-FDB8-41BF-9354-662AA8FDD5F2}">
+      <asm:securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+      <asm:registryValue name="" valueType="REG_SZ" value="__x_WindowsInternal_CShell_CUnifiedTile_CPrivate_CIUnifiedTileVerbProviderAggregator" />
+    </asm:registryKey>
+    <asm:registryKey keyName="HKEY_CLASSES_ROOT\Interface\{035A011C-FDB8-41BF-9354-662AA8FDD5F2}\ProxyStubClsid32">
+      <asm:registryValue name="" valueType="REG_SZ" value="{3FBF60BD-90B2-2C2F-7286-128BBCF72015}" />
+      <asm:securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+    </asm:registryKey>
+    <asm:registryKey keyName="HKEY_CLASSES_ROOT\Interface\{0453A28D-655E-4189-8257-81C0DDBD9C1E}">
+      <asm:securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+      <asm:registryValue name="" valueType="REG_SZ" value="__x_WindowsInternal_CShell_CJumpList_CIJumpListCategory" />
+    </asm:registryKey>
+    <asm:registryKey keyName="HKEY_CLASSES_ROOT\Interface\{0453A28D-655E-4189-8257-81C0DDBD9C1E}\ProxyStubClsid32">
+      <asm:registryValue name="" valueType="REG_SZ" value="{3FBF60BD-90B2-2C2F-7286-128BBCF72015}" />
+      <asm:securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+    </asm:registryKey>
+    <asm:registryKey keyName="HKEY_CLASSES_ROOT\Interface\{04D2940C-9E4F-4202-ACE0-789F631B6832}">
+      <asm:securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+      <asm:registryValue name="" valueType="REG_SZ" value="__x_Windows_CInternal_CComposableShell_CTabs_CITabControllerViewEventArgs" />
+    </asm:registryKey>
+    <asm:registryKey keyName="HKEY_CLASSES_ROOT\Interface\{04D2940C-9E4F-4202-ACE0-789F631B6832}\ProxyStubClsid32">
+      <asm:registryValue name="" valueType="REG_SZ" value="{3FBF60BD-90B2-2C2F-7286-128BBCF72015}" />
+      <asm:securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+    </asm:registryKey>
+    <asm:registryKey keyName="HKEY_CLASSES_ROOT\Interface\{0562D710

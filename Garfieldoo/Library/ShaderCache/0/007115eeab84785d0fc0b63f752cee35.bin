@@ -1,0 +1,45 @@
+ml.Serialization.XmlArrayItemAttribute">
+      <summary>Representa un atributo que especifica los tipos derivados que <see cref="T:System.Xml.Serialization.XmlSerializer" /> puede colocar en una matriz serializada.</summary>
+    </member>
+    <member name="M:System.Xml.Serialization.XmlArrayItemAttribute.#ctor">
+      <summary>Inicializa una nueva instancia de la clase <see cref="T:System.Xml.Serialization.XmlArrayItemAttribute" />.</summary>
+    </member>
+    <member name="M:System.Xml.Serialization.XmlArrayItemAttribute.#ctor(System.String)">
+      <summary>Inicializa una instancia nueva de la clase <see cref="T:System.Xml.Serialization.XmlArrayItemAttribute" /> y especifica el nombre del elemento XML generado en el documento XML.</summary>
+      <param name="elementName">Nombre del elemento XML. </param>
+    </member>
+    <member name="M:System.Xml.Serialization.XmlArrayItemAttribute.#ctor(System.String,System.Type)">
+      <summary>Inicializa una instancia nueva de la clase <see cref="T:System.Xml.Serialization.XmlArrayItemAttribute" /> y especifica el nombre del elemento XML generado en el documento XML, así como el <see cref="T:System.Type" /> que puede insertarse en el documento XML generado.</summary>
+      <param name="elementName">Nombre del elemento XML. </param>
+      <param name="type">
+        <see cref="T:System.Type" /> del objeto que se va a serializar. </param>
+    </member>
+    <member name="M:System.Xml.Serialization.XmlArrayItemAttribute.#ctor(System.Type)">
+      <summary>Inicializa una instancia nueva de la clase <see cref="T:System.Xml.Serialization.XmlArrayItemAttribute" /> y especifica el <see cref="T:System.Type" /> que puede insertarse en la matriz serializada.</summary>
+      <param name="type">
+        <see cref="T:System.Type" /> del objeto que se va a serializar. </param>
+    </member>
+    <member name="P:System.Xml.Serialization.XmlArrayItemAttribute.DataType">
+      <summary>Obtiene o establece el tipo de datos XML del elemento XML generado.</summary>
+      <returns>Tipo de datos de definición de esquemas XML (XSD), tal como se define en el documento "XML Schema Part 2: Datatypes" del Consorcio WWC (www.w3.org).</returns>
+    </member>
+    <member name="P:System.Xml.Serialization.XmlArrayItemAttribute.ElementName">
+      <summary>Obtiene o establece el nombre del elemento XML generado.</summary>
+      <returns>Nombre del elemento XML generado.El valor predeterminado es el identificador de miembros.</returns>
+    </member>
+    <member name="P:System.Xml.Serialization.XmlArrayItemAttribute.Form">
+      <summary>Obtiene o establece un valor que indica si el nombre del elemento XML generado está calificado.</summary>
+      <returns>Uno de los valores de <see cref="T:System.Xml.Schema.XmlSchemaForm" />.El valor predeterminado es XmlSchemaForm.None.</returns>
+      <exception cref="T:System.Exception">La propiedad <see cref="P:System.Xml.Serialization.XmlArrayItemAttribute.Form" /> se establece en XmlSchemaForm.Unqualified y se especifica un valor para la propiedad <see cref="P:System.Xml.Serialization.XmlArrayItemAttribute.Namespace" />. </exception>
+    </member>
+    <member name="P:System.Xml.Serialization.XmlArrayItemAttribute.IsNullable">
+      <summary>Obtiene o establece un valor que indica si <see cref="T:System.Xml.Serialization.XmlSerializer" /> debe serializar un miembro como una etiqueta XML vacía con el atributo xsi:nil establecido en true.</summary>
+      <returns>Es true si <see cref="T:System.Xml.Serialization.XmlSerializer" /> genera el atributo xsi:nil; en caso contrario, es false y no se genera ninguna instancia.El valor predeterminado es true.</returns>
+    </member>
+    <member name="P:System.Xml.Serialization.XmlArrayItemAttribute.Namespace">
+      <summary>Obtiene o establece el espacio de nombres del elemento XML generado.</summary>
+      <returns>Espacio de nombres del elemento XML generado.</returns>
+    </member>
+    <member name="P:System.Xml.Serialization.XmlArrayItemAttribute.NestingLevel">
+      <summary>Obtiene o establece el nivel en una jerarquía de elementos XML a los que afecta <see cref="T:System.Xml.Serialization.XmlArrayItemAttribute" />.</summary>
+      <returns>Índice de base 

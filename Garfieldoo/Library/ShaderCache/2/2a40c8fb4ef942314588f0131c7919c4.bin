@@ -1,0 +1,37 @@
+ependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-ATL.Resources" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-Attrib.Resources" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-Autochk.Resources" version="10.0.19041.804" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-AutochkConfigurator.Resources" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-BcdBoot-CmdlineTool.Resources" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-BootConfig.Resources" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-BootConfigurationData-CmdlineTool.Resources" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-BootEnvironment-Strings.Resources" version="10.0.19041.1" processorArchitecture

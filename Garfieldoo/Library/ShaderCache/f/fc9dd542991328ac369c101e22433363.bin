@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<taskGroup revocation="false" xmlns="http://schemas.microsoft.com/windows/2008/deviceExperienceTasks" taskGroupGuid="{B58041D8-D51A-46DB-ABCE-FA2E152E36F1}">
+  <tasks>
+    <!--Lenovo ThinkVantage Toolbox-->
+    <task id="{72491F2E-7443-4543-A0D8-22024B635802}" rank="0" issueTime="2009-06-09T10:10:10Z" requiresElevation="true" name="TOOLBOX_TASK_NAME" description="TOOLBOX_TASK_DESC" icon="ltoolbox1.ico">
+      <requirements>
+        <registryKeyExists path="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\App Paths\pcdlauncher.exe" invert="false" />
+		<registryKeyExists path="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion" value="CurrentMajorVersionNumber" invert="true" />
+      </requirements>
+      <command type="ShellExecute">
+        <arguments>
+          <appPath>pcdlauncher.exe</appPath>
+        </arguments>
+      </command>
+    </task>
+    <!--Lenovo ThinkVantage Toolbox Ready to Install-->
+    <task id="{97AB7EB4-5C8D-4a79-B904-2FC11C62A9E4}" rank="0" issueTime="2010-09-20T10:10:10Z" requiresElevation="true" name="TOOLBOX_RTI_TASK_NAME" description="TOOLBOX_RTI_TASK_DESC" icon="ltoolbox0.ico">
+      <requirements>
+        <registryKeyExists path="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\App Paths\pcdlauncher.exe" invert="true" />
+        <registryKeyExists path="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\App Paths\ltt_install.exe" invert="false" />
+		<registryKeyExists path="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion" value="CurrentMajorVersionNumber" invert="true" />
+      </requirements>
+      <command type="ShellExecute">
+        <arguments>
+          <appPath>ltt_install.exe</appPath>
+        </arguments>
+      </command>
+    </task>
+	<!--Lenovo Solution Center-->
+    <task id="{0C2DEFFE-4815-4BE4-8450-815BA57462CA}" rank="0" issueTime="2009-06-09T10:10:10Z" requiresElevation="true" name="SOLNCTR_TASK_NAME" description="SOLNCTR_TASK_DESC" icon="lsc1.ico">
+      <requirements>
+        <registryKeyExists path="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\App Paths\LSC.exe" invert="false" />
+		<registryKeyExists path="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion" value="CurrentMajorVersionNumber" invert="true" />
+      </requirements>
+      <command type="ShellExecute">
+        <arguments>
+          <appPath>LSC.exe</appPath>
+        </arguments>
+      </command>
+    </task>
+    <!--Lenovo Solution Center Ready to Install-->
+    <task id="{23CEBF93-9208-44A6-BED9-FEBA1B54F64A}" rank="0" issueTime="2010-09-20T10:10:10Z" requiresElevation="true" name="SOLNCTR_RTI_TASK_NAME" description="SOLNCTR_RTI_TASK_DESC" icon="lsc0.ico">
+      <requirements>
+        <registryKeyExists path="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\App Paths\LSC.exe" invert="true" />
+        <registryKeyExists path="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\App Paths\solnctr_install.exe" invert="false" />
+		<registryKeyExists path="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion" value="CurrentMajorVersionNumber" invert="true" />
+      </requirements>
+      <command type="ShellExecute">
+        <arguments>
+          <appPath>solnctr_install.exe</appPath>
+        </arguments>
+      </command>
+    </task>
+    <!--Rescue and Recovery-->
+    <task id="{547D3508-AC4E-4D24-BB55-1DADE8E8CA76}" rank="0" issueTime="2009-06-09T10:10:10Z" requiresElevation="false" name="RNR_TASK_NAME" description="RNR_TASK_DESC" icon="lrescue1.ico">
+      <requirements>
+        <registryKeyExists path="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\App Paths\rnr_simple.exe" invert="false" />
+		<registryKeyExists path="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion" value="CurrentMajorVersionNumber" invert="true" />
+      </requirements>
+      <command type="ShellExecute">
+        <arguments>
+          <appPath>rnr_simple.exe</appPath>
+        </arguments>
+      </command>
+    </task>
+    <!--Rescue and Recovery Ready to Install-->
+    <task id="{FE024ABC-4DAE-4eab-B517-F7620B2A2EBE}" rank="0" issueTime="2010-06-09T10:10:10Z" requiresElevation="true" name="RNR_RTI_TASK_NAME" description="RNR_RTI_TASK_DESC" icon="lrescue0.ico">
+      <requirements>
+        <registryKeyExists path="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\App Paths\rnr_simple.exe" invert="true" />
+        <registryKeyExists path="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\App Paths\rnr_install.exe" invert="false" />
+		<registryKeyExists path="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion" value="CurrentMajorVersionNumber" invert="true" />
+      </requirements>
+      <command type="ShellExecute">
+        <arguments>
+          <appPath>rnr_install.exe</appPath>
+        </arguments>
+      </command>
+    </task>
+    <!--System Update-->
+    <task id="{59E6BC11-5A90-4916-9A5A-5CB271E0AB1D}" rank="0" issueTime="2009-06-09T10:10:10Z" requiresElevation="false" name="SYSUPD_TASK_NAME" description="SYSUPD_TASK_DESC" icon="lupdate1.ico">
+      <requirements>
+        <registryKeyExists path="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\App Paths\tvsu.exe" invert="false" />
+		<registryKeyExists path="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion" value="CurrentMajorVersionNumber" invert="true" />
+      </requirements>
+      <command type="ShellExecute">
+        <arguments>
+          <appPath>tvsu.exe</appPath>
+        </arguments>
+      </command>
+    </task>
+    <!--System Update Ready to Install-->
+    <task id="{FC4F575C-4E46-4b29-BCC7-C736983CEF4A}" rank="0" issueTime="2010-09-20T10:10:10Z" requiresElevation="true" name="SYSUPD_RTI_TASK_NAME" description="SYSUPD_RTI_TASK_DESC" icon="lupdate0.ico">
+      <requirements>
+        <registryKeyExists path="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\App Paths\tvsu.exe" invert="true" />
+        <registryKeyExists path="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\App Paths\tvsu_install.exe" invert="false" />
+		<registryKeyExists path="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion" value="CurrentMajorVersionNumber" invert="true" />
+      </requirements>
+      <command type="ShellExecute">
+        <arguments>
+          <appPath>tvsu_install.exe</appPath>
+        </arguments>
+      </command>
+    </task>
+    <!--Lenovo Password Manager-->
+    <task id="{4E87C7C5-B8A4-4d2b-897D-8EE89885D327}" rank="0" issueTime="2009-06-09T10:10:10Z" requiresElevation="false" name="PWD_TASK_NAME" description="PWD_TASK_DESC" icon="lpassword1.ico">
+      <requirements>
+        <registryKeyExists path="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\App Paths\password_manager.exe" invert="false" />
+		<registryKeyExists path="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion" value="CurrentMajorVersionNumber" invert="true" />
+      </requirements>
+      <command type="ShellExecute">
+        <arguments>
+          <appPath>password_manager.exe</appPath>
+        </arguments>
+      </command>
+    </task>
+    <!--Password Manager Ready to Install-->
+    <task id="{42A6CB0F-7D17-4fc1-9C5D-ED3930F051CD}" rank="0" issueTime="2010-06-09T10:10:10Z" requiresElevation="true" name="PWD_RTI_TASK_NAME" description="PWD_RTI_TASK_DESC" icon="lpassword0.ico">
+      <requirements>
+        <registryKeyExists path="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\App Paths\password_manager.exe" invert="true" />
+        <registryKeyExist

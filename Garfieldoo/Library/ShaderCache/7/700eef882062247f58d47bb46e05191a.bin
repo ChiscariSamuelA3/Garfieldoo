@@ -1,0 +1,122 @@
+ine MQ_ERROR_MQIS_SERVER_EMPTY ((HRESULT)0xC00E005F)
+#define MQ_ERROR_MQIS_READONLY_MODE ((HRESULT)0xC00E0060)
+#define MQ_ERROR_SYMM_KEY_BUFFER_TOO_SMALL ((HRESULT)0xC00E0061)
+#define MQ_ERROR_SIGNATURE_BUFFER_TOO_SMALL ((HRESULT)0xC00E0062)
+#define MQ_ERROR_PROV_NAME_BUFFER_TOO_SMALL ((HRESULT)0xC00E0063)
+#define MQ_ERROR_ILLEGAL_OPERATION ((HRESULT)0xC00E0064)
+#define MQ_ERROR_WRITE_NOT_ALLOWED ((HRESULT)0xC00E0065)
+#define MQ_ERROR_WKS_CANT_SERVE_CLIENT ((HRESULT)0xC00E0066)
+#define MQ_ERROR_DEPEND_WKS_LICENSE_OVERFLOW ((HRESULT)0xC00E0067)
+#define MQ_CORRUPTED_QUEUE_WAS_DELETED ((HRESULT)0xC00E0068)
+#define MQ_ERROR_REMOTE_MACHINE_NOT_AVAILABLE ((HRESULT)0xC00E0069)
+#define MQ_ERROR_UNSUPPORTED_OPERATION ((HRESULT)0xC00E006A)
+#define MQ_ERROR_ENCRYPTION_PROVIDER_NOT_SUPPORTED ((HRESULT)0xC00E006B)
+#define MQ_ERROR_CANNOT_SET_CRYPTO_SEC_DESCR ((HRESULT)0xC00E006C)
+#define MQ_ERROR_CERTIFICATE_NOT_PROVIDED ((HRESULT)0xC00E006D)
+#define MQ_ERROR_Q_DNS_PROPERTY_NOT_SUPPORTED ((HRESULT)0xC00E006E)
+#define MQ_ERROR_CANNOT_CREATE_CERT_STORE ((HRESULT)0xC00E006F)
+#define MQ_ERROR_CANNOT_OPEN_CERT_STORE ((HRESULT)0xC00E0070)
+#define MQ_ERROR_ILLEGAL_ENTERPRISE_OPERATION ((HRESULT)0xC00E0071)
+#define MQ_ERROR_CANNOT_GRANT_ADD_GUID ((HRESULT)0xC00E0072)
+#define MQ_ERROR_CANNOT_LOAD_MSMQOCM ((HRESULT)0xC00E0073)
+#define MQ_ERROR_NO_ENTRY_POINT_MSMQOCM ((HRESULT)0xC00E0074)
+#define MQ_ERROR_NO_MSMQ_SERVERS_ON_DC ((HRESULT)0xC00E0075)
+#define MQ_ERROR_CANNOT_JOIN_DOMAIN ((HRESULT)0xC00E0076)
+#define MQ_ERROR_CANNOT_CREATE_ON_GC ((HRESULT)0xC00E0077)
+#define MQ_ERROR_GUID_NOT_MATCHING ((HRESULT)0xC00E0078)
+#define MQ_ERROR_PUBLIC_KEY_NOT_FOUND ((HRESULT)0xC00E0079)
+#define MQ_ERROR_PUBLIC_KEY_DOES_NOT_EXIST ((HRESULT)0xC00E007A)
+#define MQ_ERROR_ILLEGAL_MQPRIVATEPROPS ((HRESULT)0xC00E007B)
+#define MQ_ERROR_NO_GC_IN_DOMAIN ((HRESULT)0xC00E007C)
+#define MQ_ERROR_NO_MSMQ_SERVERS_ON_GC ((HRESULT)0xC00E007D)
+#define MQ_ERROR_CANNOT_GET_DN ((HRESULT)0xC00E007E)
+#define MQ_ERROR_CANNOT_HASH_DATA_EX ((HRESULT)0xC00E007F)
+#define MQ_ERROR_CANNOT_SIGN_DATA_EX ((HRESULT)0xC00E0080)
+#define MQ_ERROR_CANNOT_CREATE_HASH_EX ((HRESULT)0xC00E0081)
+#define MQ_ERROR_FAIL_VERIFY_SIGNATURE_EX ((HRESULT)0xC00E0082)
+#define MQ_ERROR_CANNOT_DELETE_PSC_OBJECTS ((HRESULT)0xC00E0083)
+#define MQ_ERROR_NO_MQUSER_OU ((HRESULT)0xC00E0084)
+#define MQ_ERROR_CANNOT_LOAD_MQAD ((HRESULT)0xC00E0085)
+#define MQ_ERROR_CANNOT_LOAD_MQDSSRV ((HRESULT)0xC00E0086)
+#define MQ_ERROR_PROPERTIES_CONFLICT ((HRESULT)0xC00E0087)
+#define MQ_ERROR_MESSAGE_NOT_FOUND ((HRESULT)0xC00E0088)
+#define MQ_ERROR_CANT_RESOLVE_SITES ((HRESULT)0xC00E0089)
+#define MQ_ERROR_NOT_SUPPORTED_BY_DEPENDENT_CLIENTS ((HRESULT)0xC00E008A)
+#define MQ_ERROR_OPERATION_NOT_SUPPORTED_BY_REMOTE_COMPUTER ((HRESULT)0xC00E008B)
+#define MQ_ERROR_NOT_A_CORRECT_OBJECT_CLASS ((HRESULT)0xC00E008C)
+#define MQ_ERROR_MULTI_SORT_KEYS ((HRESULT)0xC00E008D)
+#define MQ_ERROR_GC_NEEDED ((HRESULT)0xC00E008E)
+#define MQ_ERROR_DS_BIND_ROOT_FOREST ((HRESULT)0xC00E008F)
+#define MQ_ERROR_DS_LOCAL_USER ((HRESULT)0xC00E0090)
+#define MQ_ERROR_Q_ADS_PROPERTY_NOT_SUPPORTED ((HRESULT)0xC00E0091)
+#define MQ_ERROR_BAD_XML_FORMAT ((HRESULT)0xC00E0092)
+#define MQ_ERROR_UNSUPPORTED_CLASS ((HRESULT)0xC00E0093)
+#define MQ_ERROR_UNINITIALIZED_OBJECT ((HRESULT)0xC00E0094)
+#define MQ_ERROR_CANNOT_CREATE_PSC_OBJECTS ((HRESULT)0xC00E0095)
+#define MQ_ERROR_CANNOT_UPDATE_PSC_OBJECTS ((HRESULT)0xC00E0096)
+
+#define MQCERT_REGISTER_ALWAYS 0x01
+#define MQCERT_REGISTER_IF_NOT_EXIST 0x02
+
+#define MQSEC_DELETE_MESSAGE 0x1
+#define MQSEC_PEEK_MESSAGE 0x2
+#define MQSEC_WRITE_MESSAGE 0x4
+#define MQSEC_DELETE_JOURNAL_MESSAGE 0x8
+#define MQSEC_SET_QUEUE_PROPERTIES 0x10
+#define MQSEC_GET_QUEUE_PROPERTIES 0x20
+#define MQSEC_DELETE_QUEUE DELETE
+#define MQSEC_GET_QUEUE_PERMISSIONS READ_CONTROL
+#define MQSEC_CHANGE_QUEUE_PERMISSIONS WRITE_DAC
+#define MQSEC_TAKE_QUEUE_OWNERSHIP WRITE_OWNER
+
+#define MQSEC_RECEIVE_MESSAGE (MQSEC_DELETE_MESSAGE | MQSEC_PEEK_MESSAGE)
+#define MQSEC_RECEIVE_JOURNAL_MESSAGE (MQSEC_DELETE_JOURNAL_MESSAGE | MQSEC_PEEK_MESSAGE)
+#define MQSEC_QUEUE_GENERIC_READ (MQSEC_GET_QUEUE_PROPERTIES | MQSEC_GET_QUEUE_PERMISSIONS | MQSEC_RECEIVE_MESSAGE | MQSEC_RECEIVE_JOURNAL_MESSAGE)
+#define MQSEC_QUEUE_GENERIC_WRITE (MQSEC_GET_QUEUE_PROPERTIES | MQSEC_GET_QUEUE_PERMISSIONS | MQSEC_WRITE_MESSAGE)
+#define MQSEC_QUEUE_GENERIC_EXECUTE 0
+#define MQSEC_QUEUE_GENERIC_ALL (MQSEC_RECEIVE_MESSAGE | MQSEC_RECEIVE_JOURNAL_MESSAGE | MQSEC_WRITE_MESSAGE | MQSEC_SET_QUEUE_PROPERTIES | MQSEC_GET_QUEUE_PROPERTIES | MQSEC_DELETE_QUEUE | MQSEC_GET_QUEUE_PERMISSIONS | MQSEC_CHANGE_QUEUE_PERMISSIONS | MQSEC_TAKE_QUEUE_OWNERSHIP)
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+  typedef VOID (WINAPI *PMQRECEIVECALLBACK)(HRESULT hrStatus,QUEUEHANDLE hSource,DWORD dwTimeout,DWORD dwAction,MQMSGPROPS *pMessageProps,LPOVERLAPPED lpOverlapped,HANDLE hCursor);
+
+  HRESULT WINAPI MQCreateQueue(PSECURITY_DESCRIPTOR pSecurityDescriptor,MQQUEUEPROPS *pQueueProps,LPWSTR lpwcsFormatName,LPDWORD lpdwFormatNameLength);
+  HRESULT WINAPI MQDeleteQueue(LPCWSTR lpwcsFormatName);
+  HRESULT WINAPI MQLocateBegin(LPCWSTR lpwcsContext,MQRESTRICTION *pRestriction,MQCOLUMNSET *pColumns,MQSORTSET *pSort,PHANDLE phEnum);
+  HRESULT WINAPI MQLocateNext(HANDLE hEnum,DWORD *pcProps,MQPROPVARIANT aPropVar[]);
+  HRESULT WINAPI MQLocateEnd(HANDLE hEnum);
+  HRESULT WINAPI MQOpenQueue(LPCWSTR lpwcsFormatName,DWORD dwAccess,DWORD dwShareMode,QUEUEHANDLE *phQueue);
+  HRESULT WINAPI MQSendMessage(QUEUEHANDLE hDestinationQueue,MQMSGPROPS *pMessageProps,ITransaction *pTransaction);
+  HRESULT WINAPI MQReceiveMessage(QUEUEHANDLE hSource,DWORD dwTimeout,DWORD dwAction,MQMSGPROPS *pMessageProps,LPOVERLAPPED lpOverlapped,PMQRECEIVECALLBACK fnReceiveCallback,HANDLE hCursor,ITransaction *pTransaction);
+  HRESULT WINAPI MQReceiveMessageByLookupId(QUEUEHANDLE hSource,ULONGLONG ullLookupId,DWORD dwLookupAction,MQMSGPROPS *pMessageProps,LPOVERLAPPED lpOverlapped,PMQRECEIVECALLBACK fnReceiveCallback,ITransaction *pTransaction);
+  HRESULT WINAPI MQCreateCursor(QUEUEHANDLE hQueue,PHANDLE phCursor);
+  HRESULT WINAPI MQCloseCursor(HANDLE hCursor);
+  HRESULT WINAPI MQCloseQueue(QUEUEHANDLE hQueue);
+  HRESULT WINAPI MQSetQueueProperties(LPCWSTR lpwcsFormatName,MQQUEUEPROPS *pQueueProps);
+  HRESULT WINAPI MQGetQueueProperties(LPCWSTR lpwcsFormatName,MQQUEUEPROPS *pQueueProps);
+  HRESULT WINAPI MQGetQueueSecurity(LPCWSTR lpwcsFormatName,SECURITY_INFORMATION RequestedInformation,PSECURITY_DESCRIPTOR pSecurityDescriptor,DWORD nLength,LPDWORD lpnLengthNeeded);
+  HRESULT WINAPI MQSetQueueSecurity(LPCWSTR lpwcsFormatName,SECURITY_INFORMATION SecurityInformation,PSECURITY_DESCRIPTOR pSecurityDescriptor);
+  HRESULT WINAPI MQPathNameToFormatName(LPCWSTR lpwcsPathName,LPWSTR lpwcsFormatName,LPDWORD lpdwFormatNameLength);
+  HRESULT WINAPI MQHandleToFormatName(QUEUEHANDLE hQueue,LPWSTR lpwcsFormatName,LPDWORD lpdwFormatNameLength);
+  HRESULT WINAPI MQInstanceToFormatName(GUID *pGuid,LPWSTR lpwcsFormatName,LPDWORD lpdwFormatNameLength);
+  HRESULT WINAPI MQADsPathToFormatName(LPCWSTR lpwcsADsPath,LPWSTR lpwcsFormatName,LPDWORD lpdwFormatNameLength);
+  VOID WINAPI MQFreeMemory(PVOID pvMemory);
+  HRESULT WINAPI MQGetMachineProperties(LPCWSTR lpwcsMachineName,const GUID *pguidMachineId,MQQMPROPS *pQMProps);
+  HRESULT WINAPI MQGetSecurityContext(PVOID lpCertBuffer,DWORD dwCertBufferLength,HANDLE *phSecurityContext);
+  HRESULT WINAPI MQGetSecurityContextEx(PVOID lpCertBuffer,DWORD dwCertBufferLength,HANDLE *phSecurityContext);
+  VOID WINAPI MQFreeSecurityContext(HANDLE hSecurityContext);
+  HRESULT WINAPI MQRegisterCertificate(DWORD dwFlags,PVOID lpCertBuffer,DWORD dwCertBufferLength);
+  HRESULT WINAPI MQBeginTransaction(ITransaction **ppTransaction);
+  HRESULT WINAPI MQGetOverlappedResult(LPOVERLAPPED lpOverlapped);
+  HRESULT WINAPI MQGetPrivateComputerInformation(LPCWSTR lpwcsComputerName,MQPRIVATEPROPS *pPrivateProps);
+  HRESULT WINAPI MQPurgeQueue(QUEUEHANDLE hQueue);
+  HRESULT WINAPI MQMgmtGetInfo(LPCWSTR pComputerName,LPCWSTR pObjectName,MQMGMTPROPS *pMgmtProps);
+  HRESULT WINAPI MQMgmtAction(LPCWSTR pComputerName,LPCWSTR pObjectName,LPCWSTR pAction);
+
+#ifdef __cplusplus
+}
+#endif
+#endif
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            

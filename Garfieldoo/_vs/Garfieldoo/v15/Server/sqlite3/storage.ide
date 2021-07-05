@@ -1,0 +1,121 @@
+Channel"/>
+      <xs:enumeration value="systemEvent"/>
+      <xs:enumeration value="timer"/>
+      <xs:enumeration value="pushNotification"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="ST_BackgroundTasks_2013">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="location"/>
+      <xs:enumeration value="deviceUse"/>
+      <xs:enumeration value="deviceServicing"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="ST_BackgroundTasks_2014">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="chatMessageNotification"/>
+      <xs:enumeration value="rfcommConnection"/>
+      <xs:enumeration value="deviceConnectionChange"/>
+      <xs:enumeration value="bluetoothSignalStrength"/>
+      <xs:enumeration value="gattCharacteristicNotification"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="ST_BackgroundTasks_Foundation">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="general"/>
+      <xs:enumeration value="audio"/>
+      <xs:enumeration value="controlChannel"/>
+      <xs:enumeration value="systemEvent"/>
+      <xs:enumeration value="timer"/>
+      <xs:enumeration value="pushNotification"/>
+      <xs:enumeration value="location"/>
+      <xs:enumeration value="deviceUse"/>
+      <xs:enumeration value="deviceServicing"/>
+      <xs:enumeration value="deviceConnectionChange"/>
+      <xs:enumeration value="bluetooth"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="ST_BackgroundTasks_Uap">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="chatMessageNotification"/>
+      <xs:enumeration value="vpnClient"/>
+      <xs:enumeration value="phoneCall"/>
+      <xs:enumeration value="mediaProcessing"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="ST_BackgroundTasks_Iot">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="startup"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="ST_Subsystem">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="console"/>
+      <xs:enumeration value="windows"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="ST_SupportedUsers">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="single"/>
+      <xs:enumeration value="multiple"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="ST_SettingsAppCategories">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="system"/>
+      <xs:enumeration value="devices"/>
+      <xs:enumeration value="networking"/>
+      <xs:enumeration value="personalization"/>
+      <xs:enumeration value="accounts"/>
+      <xs:enumeration value="privacy"/>
+      <xs:enumeration value="extras"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="ST_SettingsPageUri">
+    <xs:restriction base="xs:anyURI">
+      <xs:pattern value="ms-settings:.*"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="ST_Parameters">
+    <xs:restriction base="ST_NonEmptyString">
+      <xs:pattern value="((?!\%[Ii].*\%[Ii]).)*"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- VISUAL ELEMENTS SCHEMA TYPES -->
+  <xs:simpleType name="ST_ShowName">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="allLogos"/>
+      <xs:enumeration value="noLogos"/>
+      <xs:enumeration value="logoOnly"/>
+      <xs:enumeration value="wideLogoOnly"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="ST_LockScreenNotification">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="badge"/>
+      <xs:enumeration value="badgeAndTileText"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="ST_ForegroundText">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="light"/>
+      <xs:enumeration value="dark"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="ST_RotationPreference">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="p

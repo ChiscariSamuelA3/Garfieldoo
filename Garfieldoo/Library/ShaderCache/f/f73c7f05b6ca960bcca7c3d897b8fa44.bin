@@ -1,0 +1,18 @@
+supported layout with type: "+d.layoutType+" and client metadata: "+UY(d.Ja)+" in AdBreakRequestLayoutRenderingAdapterFactory.");};V_.prototype.Se=function(a){var b=this.B.get(a)||[];YGa(this.Xa.get(),this.layoutId,a,b);this.i.add(a)};g.k=mHa.prototype;g.k.rd=function(){return this.slot};
+g.k.Nb=function(){return this.layout};
+g.k.init=function(){};
+g.k.release=function(){};
+g.k.startRendering=function(a){a.layoutId!==this.layout.layoutId?this.callback.tf(this.slot,a,new gZ("Tried to start rendering an unknown layout, this adapter requires LayoutId: "+this.layout.layoutId+("and LayoutType: "+this.layout.layoutType))):(this.callback.Kc(this.slot,a),Y_(this.l,"impression"),l0(this.i,a.layoutId))};
+g.k.cf=function(a,b){a.layoutId!==this.layout.layoutId?this.callback.tf(this.slot,a,new gZ("Tried to stop rendering an unknown layout, this adapter requires LayoutId: "+this.layout.layoutId+("and LayoutType: "+this.layout.layoutType))):this.callback.Uc(this.slot,a,b)};Z_.prototype.Te=function(a,b,c,d){if(T_(d,nHa()))return new mHa(a,c,d,this.Xa,this.i);throw new gZ("Unsupported layout with type: "+d.layoutType+" and client metadata: "+UY(d.Ja)+" in ForecastingLayoutRenderingAdapterFactory.");};g.v($_,g.Q);g.k=$_.prototype;g.k.rd=function(){return this.slot};
+g.k.Nb=function(){return this.layout};
+g.k.init=function(){this.l.get().addListener(this)};
+g.k.release=function(){this.l.get().removeListener(this);this.dispose()};
+g.k.NC=function(){};
+g.k.LC=function(){};
+g.k.KC=function(){};
+g.k.Jx=function(){};
+g.k.startRendering=function(a){a.layoutId!==this.layout.layoutId?this.callback.tf(this.slot,a,new gZ("Tried to start rendering an unknown layout, this adapter requires LayoutId: "+this.layout.layoutId+("and LayoutType: "+this.layout.layoutType))):(a=this.l.get(),MHa(a,this.i,1))};
+g.k.cf=function(a,b){if(a.layoutId!==this.layout.layoutId)this.callback.tf(this.slot,a,new gZ("Tried to stop rendering an unknown layout, this adapter requires LayoutId: "+this.layout.layoutId+("and LayoutType: "+this.layout.layoutType)));else{var c=this.l.get();MHa(c,this.i,3);this.i=[];this.callback.Uc(this.slot,a,b)}};
+g.k.xa=function(){this.l.get().removeListener(this);g.Q.prototype.xa.call(this)};g.v(oHa,nI);g.v(c0,$_);g.k=c0.prototype;g.k.Cf=function(a,b){b0("action-companion",a,this.I.get().Ni,this.Xa.get(),this.u,this.B,this.rd(),this.Nb(),b)};
+g.k.startRendering=function(a){a0(this.C,this.rd(),this.Nb(),this.callback,"metadata_type_action_companion_ad_renderer",function(b,c,d,e,f){return new oHa(b,c,d,e,f)},this.i);
+$_.prototype.startRendering.call(th

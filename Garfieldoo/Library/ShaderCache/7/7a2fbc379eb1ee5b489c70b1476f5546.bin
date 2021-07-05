@@ -1,0 +1,54 @@
+ncy>
+  <dependency>
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-PinningConfirmationDialog.AppxMain.Resources" version="10.0.19041.1" processorArchitecture="amd64" language="fi-FI" publicKeyToken="31bf3856ad364e35" buildType="release" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-SecHealthUI.AppxMain.Resources" version="10.0.19041.964" processorArchitecture="amd64" language="fi-FI" publicKeyToken="31bf3856ad364e35" buildType="release" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-ShellCommon-SharedResources.Resources" version="10.0.19041.1" processorArchitecture="amd64" language="fi-FI" publicKeyToken="31bf3856ad364e35" buildType="release" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-StartTileData.resources" version="10.0.19041.1" processorArchitecture="amd64" language="fi-FI" publicKeyToken="31bf3856ad364e35" buildType="release" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-SystemSettings-SettingsHandlers-Display.Resources" version="10.0.19041.1" processorArchitecture="amd64" language="fi-FI" publicKeyToken="31bf3856ad364e35" buildType="release" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-SystemSettings-SettingsHandlers-Notifications.Resources" version="10.0.19041.1" processorArchitecture="amd64" language="fi-FI" publicKeyToken="31bf3856ad364e35" buildType="release" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-SystemSettings-SettingsHandlers-OneDriveBackup.Resources" version="10.0.19041.1" processorArchitecture="amd64" language="fi-FI" publicKeyToken="31bf3856ad364e35" buildType="release" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-SystemSettings-SettingsHandlers-Phone.Resources" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" publicKeyToken="31bf3856ad364e35" buildType="release" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-SystemSettings-SettingsHandlers-QuickActions.Resources" version="10.0.19041.1" processorArchitecture="amd64" language="fi-FI" publicKeyToken="31bf3856ad364e35" buildType="release" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="microsoft-windows-immersivecontrolpanel.appxmain.resources" version="10.0.19041.964" processorArchitecture="amd64" language="fi-FI" publicKeyToken="31bf3856ad364e35" buildType="release" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="microsoft-windows-immersivecontrolpanel.appxmain.deploy.resources" version="10.0.19041.1" processorArchitecture="amd64" language="fi-FI" publicKeyToken="31bf3856

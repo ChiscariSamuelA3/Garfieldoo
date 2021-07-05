@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v3" manifestVersion="1.0" copyright="Copyright (c) Microsoft Corporation. All Rights Reserved.">
+  <assemblyIdentity name="Microsoft-Windows-Server-Gui-RSAT-Package" version="10.0.19041.906" processorArchitecture="amd64" language="lv-LV" buildType="release" publicKeyToken="31bf3856ad364e35" />
+  <package identifier="Microsoft-Windows-Server-Gui-RSAT-Package_lv-LV LP" releaseType="Language Pack">
+    <parent disposition="detect" integrate="separate">
+      <assemblyIdentity name="Microsoft-Windows-Server-Gui-RSAT-Package" version="10.0.19041.906" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" />
+    </parent>
+    <update description="Microsoft-Windows-Server-Gui-RSAT-Package-Description_base" displayName="Microsoft-Windows-Server-Gui-RSAT-Package-DisplayName_base" name="Server-Gui-RSAT_base">
+      <applicable disposition="detect">
+        <detectUpdate>
+          <parent name="Server-Gui-RSAT_base" />
+        </detectUpdate>
+      </applicable>
+      <package contained="false" integrate="hidden">
+        <assemblyIdentity name="Microsoft-Windows-Server-Gui-RSAT-Package-base" version="10.0.19041.1" processorArchitecture="amd64" language="lv-LV" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+      </package>
+    </update>
+    <update description="Microsoft-Windows-Server-Gui-RSAT-Package-Description_net" displayName="Microsoft-Windows-Server-Gui-RSAT-Package-DisplayName_net" name="Server-Gui-RSAT_net">
+      <applicable disposition="detect">
+        <detectUpdate>
+          <parent name="Server-Gui-RSAT_net" />
+        </detectUpdate>
+      </applicable>
+      <package contained="false" integrate="hidden">
+        <assemblyIdentity name="Microsoft-Windows-Server-Gui-RSAT-Package-net" version="10.0.19041.1" processorArchitecture="amd64" language="lv-LV" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+      </package>
+    </update>
+    <update description="Microsoft-Windows-Server-Gui-RSAT-Package-Description_Microsoft-Windows-CredentialManagementRole-Tools" displayName="Microsoft-Windows-Server-Gui-RSAT-Package-DisplayName_Microsoft-Windows-CredentialManagementRole-Tools" name="Server-Gui-RSAT_Microsoft-Windows-CredentialManagementRole-Tools">
+      <applicable disposition="detect">
+        <detectUpdate>
+          <parent name="Server-Gui-RSAT_Microsoft-Windows-CredentialManagementRole-Tools" />
+        </detectUpdate>
+      </applicable>
+      <package contained="false" integrate="hidden">
+        <assemblyIdentity name="Microsoft-Windows-CredentialManagementRole-Tools" version="10.0.19041.1" processorArchitecture="amd64" language="lv-LV" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+      </package>
+    </update>
+    <update description="Server-Gui-RSAT_Microsoft-Windows-DirectoryServices-DomainController-Tools-Package" displayName="Server-Gui-RSAT_Microsoft-Windows-DirectoryServices-DomainController-Tools-Package" name="Server-Gui-RSAT_Microsoft-Windows-DirectoryServices-DomainController-Tools-Package">
+      <applicable disposition="detect">
+        <detectUpdate>
+          <parent name="Server-Gui-RSAT_Microsoft-Windows-DirectoryServices-DomainController-Tools-Package" />
+        </detectUpdate>
+      </applicable>
+      <package contained="false" integrate="hidden">
+        <assemblyIdentity name="Microsoft-Windows-DirectoryServices-DomainController-Tools-Package" version="10.0.19041.1" processorArchitecture="amd64" language="lv-LV" buildType="release" publicKeyToken="31bf3856ad364e35" />
+      </package>
+    </update>
+    <update description="Server-Gui-RSAT_Microsoft-Windows-DirectoryServices-ADAM-Tools-Package" displayName="Server-Gui-RSAT_Microsoft-Windows-DirectoryServices-ADAM-Tools-Package" name="Server-Gui-RSAT_Microsoft-Windows-DirectoryServices-ADAM-Tools-Package">
+      <applicable disposition="detect">
+        <detectUpdate>
+          <parent name="Server-Gui-RSAT_Microsoft-Windows-DirectoryServices-ADAM-Tools-Package" />
+        </detectUpdate>
+      </applicable>
+      <package contained="false" integrate="hidden">
+        <assemblyIdentity name="Microsoft-Windows-DirectoryServices-ADAM-Tools-Package" version="10.0.19041.1" processorArchitecture="amd64" language="lv-LV" buildType="release" publicKeyToken="31bf3856ad364e35" />
+      </package>
+    </update>
+    <update

@@ -1,0 +1,57 @@
+l">
+      <assemblyIdentity name="Microsoft-Windows-SMBServer.Resources" version="10.0.19041.1" processorArchitecture="amd64" language="pl-PL" publicKeyToken="31bf3856ad364e35" buildType="release" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-WorkstationService.Resources" version="10.0.19041.1" processorArchitecture="amd64" language="pl-PL" publicKeyToken="31bf3856ad364e35" buildType="release" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-PerformanceCounterInfrastructureNonExecutable.Resources" version="10.0.19041.1" processorArchitecture="wow64" language="en-US" publicKeyToken="31bf3856ad364e35" buildType="release" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-DiagnosticsHub-StandardCollector.Resources" version="10.0.19041.1" processorArchitecture="amd64" language="pl-PL" publicKeyToken="31bf3856ad364e35" buildType="release" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-BootRes.Resources" version="10.0.19041.1" processorArchitecture="amd64" language="pl-PL" publicKeyToken="31bf3856ad364e35" buildType="release" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-TextServicesFramework-msctf.Resources" version="10.0.19041.1" processorArchitecture="amd64" language="pl-PL" publicKeyToken="31bf3856ad364e35" buildType="release" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-Winsrv.Resources" version="10.0.19041.1" processorArchitecture="amd64" language="pl-PL" publicKeyToken="31bf3856ad364e35" buildType="release" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="basicdisplay.inf.Resources" version="10.0.19041.1" processorArchitecture="amd64" language="pl-PL" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="basicrender.inf.Resources" version="10.0.19041.1" processorArchitecture="amd64" language="pl-PL" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="display.inf.Resources" version="10.0.19041.1" processorArchitecture="amd64" language="pl-PL" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-D2D.Resources" version="10.0.19041.1" processorArchitecture="amd64" language="pl-PL" publicKeyToken="31bf3856ad364e35" buildType="release" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install">
+      <assemblyIdentity name="Microsoft-Windows-DirectWrite.Resources" version="10.0.19041.1" processorArchitecture="amd64" language="pl-PL" publicKeyToken="31bf3856ad364e35" buildType="release" versionS

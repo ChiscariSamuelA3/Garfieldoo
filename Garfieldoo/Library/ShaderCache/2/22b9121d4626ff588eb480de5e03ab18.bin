@@ -1,0 +1,22 @@
+
+double const_func __attribute__((overloadable)) fabs(double);
+double2 const_func __attribute__((overloadable)) fabs(double2);
+double3 const_func __attribute__((overloadable)) fabs(double3);
+double4 const_func __attribute__((overloadable)) fabs(double4);
+double8 const_func __attribute__((overloadable)) fabs(double8);
+double16 const_func __attribute__((overloadable)) fabs(double16);
+
+/**
+ * x - y if x > y, +0 if x is less than or equal to y.
+ */
+float const_func __attribute__((overloadable)) fdim(float x, float y);
+float2 const_func __attribute__((overloadable)) fdim(float2 x, float2 y);
+float3 const_func __attribute__((overloadable)) fdim(float3 x, float3 y);
+float4 const_func __attribute__((overloadable)) fdim(float4 x, float4 y);
+float8 const_func __attribute__((overloadable)) fdim(float8 x, float8 y);
+float16 const_func __attribute__((overloadable)) fdim(float16 x, float16 y);
+double const_func __attribute__((overloadable)) fdim(double x, double y);
+double2 const_func __attribute__((overloadable)) fdim(double2 x, double2 y);
+double3 const_func __attribute__((overloadable)) fdim(double3 x, double3 y);
+double4 const_func __attribute__((overloadable)) fdim(double4 x, double4 y);
+double8 const_func __attribute__((overloadable)) 

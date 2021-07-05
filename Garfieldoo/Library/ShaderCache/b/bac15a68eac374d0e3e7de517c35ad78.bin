@@ -1,0 +1,171 @@
+lected), UsedImplicitly]
+    class MuteSelectedTrack : TrackAction
+    {
+        public static readonly string UnmuteSelectedText = L10n.Tr("Unmute selected track only");
+        protected override MenuActionDisplayState GetDisplayState(WindowState state, TrackAsset[] tracks)
+        {
+            if (tracks.Any(track => TimelineUtility.IsParentMuted(track) || track is GroupTrack ||
+                !track.subTracksObjects.Any()))
+                return MenuActionDisplayState.Hidden;
+            return MenuActionDisplayState.Visible;
+        }
+
+        public override bool Execute(WindowState state, TrackAsset[] tracks)
+        {
+            if (!tracks.Any())
+                return false;
+
+            var hasUnmutedTracks = tracks.Any(x => !x.muted);
+            Mute(state, tracks.Where(p => !(p is GroupTrack)).ToArray(), hasUnmutedTracks);
+            return true;
+        }
+
+        protected override string GetDisplayName(TrackAsset[] tracks)
+        {
+            return tracks.All(t => t.muted) ?  UnmuteSelectedText : base.GetDisplayName(tracks);
+        }
+
+        public static void Mute(WindowState state, TrackAsset[] tracks, bool shouldMute)
+        {
+            if (tracks.Length == 0)
+                return;
+
+            foreach (var track in tracks.Where(t => !TimelineUtility.IsParentMuted(t)))
+            {
+                TimelineUndo.PushUndo(track, "Mute Tracks");
+                track.muted = shouldMute;
+            }
+
+            state.Refresh();
+        }
+    }
+
+    [MenuEntry("Mute", MenuOrder.TrackAction.MuteTrack)]
+    [Shortcut(Shortcuts.Timeline.toggleMute)]
+    class MuteTrack : TrackAction
+    {
+        public static readonly string UnMuteText = L10n.Tr("Unmute");
+
+        protected override MenuActionDisplayState GetDisplayState(WindowState state, TrackAsset[] tracks)
+        {
+            if (tracks.Any(track => TimelineUtility.IsParentMuted(track)))
+                return MenuActionDisplayState.Disabled;
+            return MenuActionDisplayState.Visible;
+        }
+
+        protected override string GetDisplayName(TrackAsset[] tracks)
+        {
+            return tracks.Any(x => !x.muted) ? base.GetDisplayName(tracks) : UnMuteText;
+        }
+
+        public override bool Execute(WindowState state, TrackAsset[] tracks)
+        {
+            if (!tracks.Any() || tracks.Any(track => TimelineUtility.IsParentMuted(track)))
+                return false;
+
+            var hasUnmutedTracks = tracks.Any(x => !x.muted);
+            Mute(state, tracks, hasUnmutedTracks);
+            return true;
+        }
+
+        public static void Mute(WindowState state, TrackAsset[] tracks, bool shouldMute)
+        {
+            if (tracks.Length == 0)
+                return;
+
+            foreach (var track in tracks)
+            {
+                if (track as GroupTrack == null)
+                    Mute(state, track.GetChildTracks().ToArray(), shouldMute);
+                TimelineUndo.PushUndo(track, "Mute Tracks");
+                track.muted = shouldMute;
+            }
+
+            state.Refresh();
+        }
+    }
+
+    class DeleteTracks : TrackAction
+    {
+        public static void Do(TimelineAsset timeline, TrackAsset track)
+        {
+            SelectionManager.Remove(track);
+            TrackModifier.DeleteTrack(timeline, track);
+        }
+
+        public override bool Execute(WindowState state, TrackAsset[] tracks)
+        {
+            // disable preview mode so deleted tracks revert to default state
+            // Case 956129: Disable preview mode _before_ deleting the tracks, since clip data is still needed
+            state.previewMode = false;
+
+            TimelineAnimationUtilities.UnlinkAnimationWindowFromTracks(tracks);
+
+            foreach (var track in tracks)
+                Do(state.editSequence.asset, track);
+
+            state.Refresh();
+
+            return true;
+        }
+    }
+
+    class CopyTracksToClipboard : TrackAction
+    {
+        public static bool Do(WindowState state, TrackAsset[] tracks)
+        {
+            var action = new CopyTracksToClipboard();
+
+            return action.Execute(state, tracks);
+        }
+
+        public override bool Execute(WindowState state, TrackAsset[] tracks)
+        {
+            TimelineEditor.clipboard.CopyTracks(tracks);
+
+            return true;
+        }
+    }
+
+    class DuplicateTracks : TrackAction
+    {
+        public override bool Execute(WindowState state, TrackAsset[] tracks)
+        {
+            if (tracks.Any())
+            {
+                SelectionManager.RemoveTimelineSelection();
+            }
+
+            foreach (var track in TrackExtensions.FilterTracks(tracks))
+            {
+                var newTrack = track.Duplicate(TimelineEditor.inspectedDirector, TimelineEditor.inspectedDirector);
+                SelectionManager.Add(newTrack);
+                foreach (var childTrack in newTrack.GetFlattenedChildTracks())
+                {
+                    SelectionManager.Add(childTrack);
+                }
+            }
+
+            state.Refresh();
+
+            return true;
+        }
+    }
+
+    [MenuEntry("Remove Invalid Markers", MenuOrder.TrackAction.RemoveInvalidMarkers), UsedImplicitly]
+    class RemoveInvalidMarkersAction : TrackAction
+    {
+        protected override MenuActionDisplayState GetDisplayState(WindowState state, TrackAsset[] tracks)
+        {
+            if (tracks.Any(target => target != null && target.GetMarkerCount() != target.GetMarkersRaw().Count()))
+                return MenuActionDisplayState.Visible;
+
+            return MenuActionDisplayState.Hidden;
+        }
+
+        public override bool Execute(WindowState state, TrackAsset[] tracks)
+        {
+            bool anyRemoved = false;
+            foreach (var target in tracks)
+            {
+                var invalids = target

@@ -1,0 +1,275 @@
+lDensity;
+  JET_COLUMNCREATE* rgcolumncreate;
+  unsigned __LONG32 cColumns;
+  JET_INDEXCREATE_W* rgindexcreate;
+  unsigned __LONG32 cIndexes;
+  JET_GRBIT grbit;
+  JET_TABLEID tableid;
+  unsigned __LONG32 cCreated;
+} JET_TABLECREATE_W;
+
+#define JET_TABLECREATE __MINGW_NAME_AW(JET_TABLECREATE_)
+
+typedef struct tagJET_TABLECREATE2_A {
+  unsigned __LONG32 cbStruct;
+  char* szTableName;
+  char* szTemplateTableName;
+  unsigned __LONG32 ulPages;
+  unsigned __LONG32 ulDensity;
+  JET_COLUMNCREATE_A* rgcolumncreate;
+  unsigned __LONG32 cColumns;
+  JET_INDEXCREATE_A* rgindexcreate;
+  unsigned __LONG32 cIndexes;
+  char* szCallback;
+  JET_CBTYP cbtyp;
+  JET_GRBIT grbit;
+  JET_TABLEID tableid;
+  unsigned __LONG32 cCreated;
+} JET_TABLECREATE2_A;
+
+typedef struct tagJET_TABLECREATE2_W {
+  unsigned __LONG32 cbStruct;
+  WCHAR* szTableName;
+  WCHAR* szTemplateTableName;
+  unsigned __LONG32 ulPages;
+  unsigned __LONG32 ulDensity;
+  JET_COLUMNCREATE_W* rgcolumncreate;
+  unsigned __LONG32 cColumns;
+  JET_INDEXCREATE_W* rgindexcreate;
+  unsigned __LONG32 cIndexes;
+  WCHAR* szCallback;
+  JET_CBTYP cbtyp;
+  JET_GRBIT grbit;
+  JET_TABLEID tableid;
+  unsigned __LONG32 cCreated;
+} JET_TABLECREATE2_W;
+
+#define JET_TABLECREATE2 __MINGW_NAME_AW(JET_TABLECREATE2_)
+
+#if (JET_VERSION >= 0x0600)
+typedef struct _JET_THREADSTATS {
+  unsigned __LONG32 cbStruct;
+  unsigned __LONG32 cPageReferenced;
+  unsigned __LONG32 cPageRead;
+  unsigned __LONG32 cPagePreread;
+  unsigned __LONG32 cPageDirtied;
+  unsigned __LONG32 cPageRedirtied;
+  unsigned __LONG32 cLogRecord;
+  unsigned __LONG32 cbLogRecord;
+} JET_THREADSTATS;
+
+#endif /*(JET_VERSION >= 0x0600)*/
+
+typedef struct tag_JET_USERDEFINEDDEFAULT_A {
+  char* szCallback;
+  unsigned char* pbUserData;
+  unsigned __LONG32 cbUserData;
+  char* szDependantColumns;
+} JET_USERDEFINEDDEFAULT_A;
+
+typedef struct tag_JET_USERDEFINEDDEFAULT_W {
+  WCHAR* szCallback;
+  unsigned char* pbUserData;
+  unsigned __LONG32 cbUserData;
+  WCHAR* szDependantColumns;
+} JET_USERDEFINEDDEFAULT_W;
+
+#define JET_USERDEFINEDDEFAULT __MINGW_NAME_AW(JET_USERDEFINEDDEFAULT_)
+
+typedef JET_ERR (JET_API* JET_CALLBACK)(
+  JET_SESID sesid,
+  JET_DBID dbid,
+  JET_TABLEID tableid,
+  JET_CBTYP cbtyp,
+  void* pvArg1,
+  void* pvArg2,
+  void* pvContext,
+  JET_API_PTR ulUnused
+);
+
+typedef void * (JET_API *JET_PFNREALLOC)(
+  void* pvContext,
+  void* pv,
+  unsigned __LONG32 cb
+);
+
+JET_ERR JET_API JetAddColumnA(
+  JET_SESID sesid,
+  JET_TABLEID tableid,
+  JET_PCSTR szColumnName,
+  const JET_COLUMNDEF* pcolumndef,
+  const void* pvDefault,
+  unsigned __LONG32 cbDefault,
+  JET_COLUMNID* pcolumnid
+);
+
+JET_ERR JET_API JetAddColumnW(
+  JET_SESID sesid,
+  JET_TABLEID tableid,
+  JET_PCWSTR szColumnName,
+  const JET_COLUMNDEF* pcolumndef,
+  const void* pvDefault,
+  unsigned __LONG32 cbDefault,
+  JET_COLUMNID* pcolumnid
+);
+
+#define JetAddColumn __MINGW_NAME_AW(JetAddColumn)
+
+JET_ERR JET_API JetAttachDatabaseA(
+  JET_SESID sesid,
+  const char* szFilename,
+  JET_GRBIT grbit
+);
+
+JET_ERR JET_API JetAttachDatabaseW(
+  JET_SESID sesid,
+  const WCHAR* szFilename,
+  JET_GRBIT grbit
+);
+
+#define JetAttachDatabase __MINGW_NAME_AW(JetAttachDatabase)
+
+JET_ERR JET_API JetAttachDatabase2A(
+  JET_SESID sesid,
+  const char* szFilename,
+  const unsigned __LONG32 cpgDatabaseSizeMax,
+  JET_GRBIT grbit
+);
+
+JET_ERR JET_API JetAttachDatabase2W(
+  JET_SESID sesid,
+  const WCHAR* szFilename,
+  const unsigned __LONG32 cpgDatabaseSizeMax,
+  JET_GRBIT grbit
+);
+
+#define JetAttachDatabase2 __MINGW_NAME_AW(JetAttachDatabase2)
+
+JET_ERR JET_API JetBackupA(
+  JET_PCSTR szBackupPath,
+  JET_GRBIT grbit,
+  JET_PFNSTATUS pfnStatus
+);
+
+JET_ERR JET_API JetBackupW(
+  JET_PCWSTR szBackupPath,
+  JET_GRBIT grbit,
+  JET_PFNSTATUS pfnStatus
+);
+
+#define JetBackup __MINGW_NAME_AW(JetBackup)
+
+JET_ERR JET_API JetBackupInstanceA(
+  JET_INSTANCE instance,
+  JET_PCSTR szBackupPath,
+  JET_GRBIT grbit,
+  JET_PFNSTATUS pfnStatus
+);
+
+JET_ERR JET_API JetBackupInstanceW(
+  JET_INSTANCE instance,
+  JET_PCWSTR szBackupPath,
+  JET_GRBIT grbit,
+  JET_PFNSTATUS pfnStatus
+);
+
+#define JetBackupInstance __MINGW_NAME_AW(JetBackupInstance)
+
+JET_ERR JET_API JetBeginExternalBackup(
+  JET_GRBIT grbit
+);
+
+JET_ERR JET_API JetBeginExternalBackupInstance(
+  JET_INSTANCE instance,
+  JET_GRBIT grbit
+);
+
+JET_ERR JET_API JetBeginSessionA(
+  JET_INSTANCE instance,
+  JET_SESID* psesid,
+  JET_PCSTR szUserName,
+  JET_PCSTR szPassword
+);
+
+JET_ERR JET_API JetBeginSessionW(
+  JET_INSTANCE instance,
+  JET_SESID* psesid,
+  JET_PCWSTR szUserName,
+  JET_PCWSTR szPassword
+);
+
+#define JetBeginSession __MINGW_NAME_AW(JetBeginSession)
+
+JET_ERR JET_API JetBeginTransaction(
+  JET_SESID sesid
+);
+
+JET_ERR JET_API JetBeginTransaction2(
+  JET_SESID sesid,
+  JET_GRBIT grbit
+);
+
+JET_ERR JET_API JetCloseDatabase(
+  JET_SESID sesid,
+  JET_DBID dbid,
+  JET_GRBIT grbit
+);
+
+JET_ERR JET_API JetCloseFile(
+  JET_HANDLE hfFile
+);
+
+JET_ERR JET_API JetCloseFileInstance(
+  JET_INSTANCE instance,
+  JET_HANDLE hfFile
+);
+
+JET_ERR JET_API JetCloseTable(
+  JET_SESID sesid,
+  JET_TABLEID tableid
+);
+
+JET_ERR JET_API JetCommitTransaction(
+  JET_SESID sesid,
+  JET_GRBIT grbit
+);
+
+JET_ERR JET_API JetCompactA(
+  JET_SESID sesid,
+  JET_PCSTR szDatabaseSrc,
+  JET_PCSTR szDatabaseDest,
+  JET_PFNSTATUS pfnStatus,
+  JET_CONVERT_A* pconvert,
+  JET_GRBIT grbit
+);
+
+JET_ERR JET_API JetCompactW(
+  JET_SESID sesid,
+  JET_PCWSTR szDatabaseSrc,
+  JET_PCWSTR szDatabaseDest,
+  JET_PFNSTATUS pfnStatus,
+  JET_CONVERT_W* pconvert,
+  JET_GRBIT grbit
+);
+
+#define JetCompact __MINGW_NAME_AW(JetCompact)
+
+JET_ERR JET_API JetComputeStats(
+  JET_SESID sesid,
+  JET_TABLEID tableid
+);
+
+JET_ERR JET_API JetCreateDatabaseA(
+  JET_SESID sesid,
+  JET_PCSTR szFilename,
+  JET_PCSTR szConnect,
+  JET_DBID* pdbid,
+  JET_GRBIT grbit
+);
+
+JET_ERR JET_API JetCreateDatabaseW(
+  JET_SESID sesid,
+  JET_PCWSTR szFilename,
+  JET_PCWSTR szConnect,
+  JET_DBID* pdbid,
+  JET_GRBI

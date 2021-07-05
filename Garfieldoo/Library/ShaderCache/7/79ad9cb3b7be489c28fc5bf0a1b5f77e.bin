@@ -1,0 +1,18 @@
+_double3_rte(int3);
+double3 const_func __attribute__((overloadable)) convert_double3_rtz(int3);
+double3 const_func __attribute__((overloadable)) convert_double3_rtp(int3);
+double3 const_func __attribute__((overloadable)) convert_double3_rtn(int3);
+double3 const_func __attribute__((overloadable)) convert_double3(int3);
+double3 const_func __attribute__((overloadable)) convert_double3_rte(uint3);
+double3 const_func __attribute__((overloadable)) convert_double3_rtz(uint3);
+double3 const_func __attribute__((overloadable)) convert_double3_rtp(uint3);
+double3 const_func __attribute__((overloadable)) convert_double3_rtn(uint3);
+double3 const_func __attribute__((overloadable)) convert_double3(uint3);
+double3 const_func __attribute__((overloadable)) convert_double3_rte(long3);
+double3 const_func __attribute__((overloadable)) convert_double3_rtz(long3);
+double3 const_func __attribute__((overloadable)) convert_double3_rtp(long3);
+double3 const_func __attribute__((overloadable)) convert_double3_rtn(long3);
+double3 const_func __attribute__((overloadable)) convert_double3(long3);
+double3 const_func __attribute__((overloadable)) convert_double3_rte(ulong3);
+double3 const_func __attribute__((overloadable)) convert_double3_rtz(ulong3);
+double3 const
